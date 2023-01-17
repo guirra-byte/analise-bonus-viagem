@@ -23,13 +23,13 @@ for month in months:
             if j == 'Vendas':
                 if i > 55000:
                     salesman = file['Vendedor'][index]
-                    account_sid = 'AC8cbf0b36ba66fb051ae0f4882f8fccc4'
-                    auth_token = 'b9b215066988889815593fefde175adf'
+                    account_sid = 'Your Twillio account Id'
+                    auth_token = 'Yout Twillio auth token'
                     client = Client(account_sid, auth_token)
                     body = f'''
                     {salesman} venceu nosso desafio, completou com R${i} em vendas no mês de {month}!
                     Calma, isso é só um código de Matheus Guirra!'''
-                    sendSMS(client, '+5561992839756', '+17753777603', body)
+                    sendSMS(client, 'Send Message to', 'Sender', body)
                     break
 
 
