@@ -24,7 +24,7 @@ for month in months:
                 if i > 55000:
                     salesman = file['Vendedor'][index]
                     account_sid = 'Your Twillio account Id'
-                    auth_token = 'Yout Twillio auth token'
+                    auth_token = 'Your Twillio auth token'
                     client = Client(account_sid, auth_token)
                     body = f'''
                     {salesman} venceu nosso desafio, completou com R${i} em vendas no mês de {month}!
